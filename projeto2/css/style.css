@@ -1,0 +1,50 @@
+
+h1 {
+   text-align: center;
+}
+h4{
+    text-align: center;
+}
+hr .barra {
+    text-align: center;
+    width: 100%;
+    size: 5px;
+    color: black;
+}
+.figureprincipal{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+.figure2{
+   float: left;
+}
+.figure3{
+    float: right;
+}   
+p{
+    text-align: center;
+}
+.p1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    size: 2;
+    font-weight: bold;
+}
+.p2{
+    font-family: fantasy;
+    color: black;
+    size: 3;
+}
+.p3{
+    font-family: cursive;
+    color:red;
+    size: 3;
+    font-weight: bold;
+}
+.p4{
+    font-family: copperplate;
+    color:yellow;
+    size: 3;
+}
