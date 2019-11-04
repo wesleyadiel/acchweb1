@@ -48,3 +48,17 @@ p{
     color:yellow;
     size: 3;
 }
+.p4{
+    font-family: 'Courier New', Courier, monospace;
+    size: 5;
+    color: purple;
+}
+.p6{
+    font-family: 'Courier New', Courier, monospace;
+    size: 5;
+    color: borrow;
+    text-align: left;
+}
+ul {
+    text-align: left;
+}
