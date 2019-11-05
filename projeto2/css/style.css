@@ -16,15 +16,23 @@ hr .barra {
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 .figure2{
    float: left;
+   border-radius: 20px;
 }
 .figure3{
     float: right;
+    border-radius: 20px;
 }   
 p{
-    text-align: center;
+    font-family: opensans,helvetica,arial,sans-serif;
+    font-size: 1.125rem;
+    margin-bottom: 1.75rem;
+    line-height: 1.75rem;
+    letter-spacing: -.03125rem;
+    overflow-wrap: break-word;
 }
 .p1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
