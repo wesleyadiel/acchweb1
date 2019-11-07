@@ -1,0 +1,43 @@
+.figure{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+}
+
+body{
+    background-image: url("../img/remedio-backgroundjpg.jpg");
+}
+.content{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+p{
+    text-indent: 30px;
+    font-family: sans-serif;
+}
+
+.p2{
+    text-indent: 30px;
+    font-family: sans-serif;
+}
+
+.figure .figure-left{
+    float: left;
+}
+
+.p1 ul li{
+    font-family: sans-serif;
+}
+h1{
+    font-family: sans-serif;
+}
