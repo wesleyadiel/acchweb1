@@ -1,0 +1,33 @@
+.card-linha{
+    margin-top: 60px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #3584d3;
+    width: 300px;
+    height: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
+}
+
+.card-linha .card p{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+body{
+    background-color: #b0c4de;
+}
