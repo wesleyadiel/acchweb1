@@ -1,3 +1,26 @@
+body{
+    margin-left:auto; 
+    margin-right: auto; 
+    min-height:100%;
+    height:100%;
+    background-color: #b0c4de;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    margin-top: 0;
+}
+.header {
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.content{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
 .card-linha{
     margin-top: 60px;
     display: flex;
@@ -26,8 +49,4 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-body{
-    background-color: #b0c4de;
 }
