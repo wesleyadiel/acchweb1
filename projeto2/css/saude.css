@@ -22,6 +22,7 @@ body{
     background-color: white;
     border-radius: 5px;
     padding-bottom: 30px;
+    margin-top: 30px;
 }
 .figure{
     display: flex;
