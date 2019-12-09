@@ -41,51 +41,45 @@
 <p>O piloto com o qual Hamilton se parece mais é Ayrton Senna. Principalmente na superação das dificuldades. Nos últimos dias, ouvi o Emerson Fittipaldi dizer que um dos aspectos mais marcantes do Hamilton é que ele consegue dar tudo dele mesmo quando o carro não está bom. Isso é muito difícil para um piloto. O próprio Alonso quando não tinha um carro bom, desistia e apenas queria terminar a corrida.</p><br>
    
 <span class="tituloclass">Classificação de 2019</span><br>
-<table class="tg">
-      <tr>
-        <th class="tg-7btt">Pos</th>
-        <th class="tg-7btt">Piloto</th>
-        <th class="tg-7btt">Pontos</th>
-        <th class="tg-7btt">Vitorias</th>
-        <th class="tg-7btt">Pódios</th>
-      </tr>
-      <tr>
-        <td class="tg-c3ow">1º</td>
-        <td class="tg-c3ow">L. Hamilton</td>
-        <td class="tg-c3ow">381</td>
-        <td class="tg-c3ow">10</td>
-        <td class="tg-c3ow">16</td>
-      </tr>
-      <tr>
-        <td class="tg-c3ow">2º</td>
-        <td class="tg-c3ow">V. Bottas</td>
-        <td class="tg-c3ow">314</td>
-        <td class="tg-c3ow">4</td>
-        <td class="tg-c3ow">15</td>
-      </tr>
-      <tr>
-        <td class="tg-c3ow">3º</td>
-        <td class="tg-c3ow">C. Leclerc</td>
-        <td class="tg-c3ow">249</td>
-        <td class="tg-c3ow">2</td>
-        <td class="tg-c3ow">9</td>
-      </tr>
-      <tr>
-        <td class="tg-c3ow">4º</td>
-        <td class="tg-c3ow">M. Verstappen</td>
-        <td class="tg-c3ow">230</td>
-        <td class="tg-c3ow">1</td>
-        <td class="tg-c3ow">9</td>
-      </tr>
-      <tr>
-        <td class="tg-baqh">5º</td>
-        <td class="tg-baqh">S. Vettel</td>
-        <td class="tg-baqh">230</td>
-        <td class="tg-baqh">1</td>
-        <td class="tg-baqh">9</td>
-      </tr>
-    </table><br>
 
+<?php
+include_once("../conexao/conexao.php");
+
+$sql =
+"SELECT * FROM esporte";
+if($result = mysqli_query($connection, $sql)){
+if(mysqli_num_rows($result) > 0){
+echo "<table class='tg'>";
+echo "<tr>";
+echo "<th class='tg-7btt'>Pos</th>";
+echo "<th class='tg-7btt'>Piloto</th>";
+echo "<th class='tg-7btt'>Pontos</th>";
+echo "<th class='tg-7btt'>Vitorias</th>";
+echo "<th class='tg-7btt'>Pódios</th>";
+echo "</tr>";
+while($row = mysqli_fetch_array($result)){
+echo "<tr>";
+echo "<td class='tg-c3ow'>" . $row['posicao'] . "º</td>";
+echo "<td class='tg-c3ow'>" . $row['piloto'] . "</td>";
+echo "<td class='tg-c3ow'>" . $row['pontos'] . "</td>";
+echo "<td class='tg-c3ow'>" . $row['vitorias'] . "</td>";
+echo "<td class='tg-c3ow'>" . $row['podios'] . "</td>";
+echo "</tr>";
+}
+echo "</table>";
+// Free result set
+mysqli_free_result($result);
+} 
+else{
+    echo "Não há dados no banco";
+    }
+    } else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($connection);
+    }
+    // Close connection
+    mysqli_close($connection);
+    ?>
+<br>
 Fonte: <a href="https://globoesporte.globo.com/blogs/sinal-verde/post/2019/11/04/por-que-lewis-hamilton-caminha-cada-vez-mais-para-ser-o-maior-de-todos-os-tempos-na-formula-1.ghtml" target="_self">G1</a>
 </div>
 </div>

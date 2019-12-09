@@ -44,43 +44,43 @@
 <p class="p6">Trump levantou a questão na visita de Jair Bolsonaro à Casa Branca, em março deste ano. No fim de julho, foi o secretário de Comércio dos Estados Unidos, Wilbur Ross, que desembarcou no Brasil com supostas informações sobre a vunerabilidade dos equipamentos chineses. Recentemente demitido por Trump, o ex-conselheiro de Segurança Nacional dos EUA John Bolton se encontrou com autoridades brasileiras no começo de agosto. </p>
 
 <h2> Operadoras e cidades Atendidas com 5G </h2>
-<table>
-  <tr>
-    <th></th>
-    <th>AT &amp; T</th>
-    <th>Sprint</th>
-    <th>Verizon</th>
-    <th>T-moblie</th>
-  </tr>
-  <tr>
-    <td>Cites</td>
-    <td>20</td>
-    <td>Atlanta, Chicago</td>
-    <td>Chicago, Denver</td>
-    <td>New York</td>
-  </tr>
-  <tr>
-    <td>Targeted</td>
-    <td>Millimenter</td>
-    <td>9</td>
-    <td>30</td>
-    <td>30</td>
-  </tr>
-  <tr>
-    <td>Tecnologia</td>
-    <td>TDB</td>
-    <td>Massive Mimo 2.5GHZ</td>
-    <td>Milimeter</td>
-    <td>Milimeter</td>
-  </tr>
-  <tr>
-    <td>Device</td>
-    <td>Galaxy</td>
-    <td>LG, HTC</td>
-    <td>LG V50, Galaxy S10</td>
-    <td>Galaxy S10</td>
-  </tr>
-</table>
+<?php
+include_once("../conexao/conexao.php");
+
+$sql =
+"SELECT * FROM news2";
+if($result = mysqli_query($connection, $sql)){
+if(mysqli_num_rows($result) > 0){
+echo "<table>";
+echo "<tr>";
+echo "<th>Cidade</th>";
+echo "<th>Operadora</th>";
+echo "<th>Tecnologia</th>";
+echo "<th>Targeted</th>";
+echo "<th>Dispositivos</th>";
+echo "</tr>";
+while($row = mysqli_fetch_array($result)){
+echo "<tr>";
+echo "<td>" . $row['cidade'] . "</td>";
+echo "<td>" . $row['operadora'] . "</td>";
+echo "<td>" . $row['tecnologia'] . "</td>";
+echo "<td>" . $row['targeted'] . "</td>";
+echo "<td>" . $row['device'] . "</td>";
+echo "</tr>";
+}
+echo "</table>";
+// Free result set
+mysqli_free_result($result);
+} 
+else{
+    echo "Não há dados no banco";
+    }
+    } else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($connection);
+    }
+    // Close connection
+    mysqli_close($connection);
+    ?>
 </div>
 
 </body>

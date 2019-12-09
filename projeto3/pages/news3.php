@@ -1,3 +1,13 @@
+<?php
+include_once("../conexao/conexao.php");
+$sql =
+"SELECT * FROM news3";
+$result = mysqli_query($connection, $sql);
+
+$connection->set_charset('utf8')
+
+    ?>
+
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
@@ -35,52 +45,55 @@
 
 <p class="p4">Especificações Drone</p>
 <div class="p5">
-	<table>
+<?php while($dado = $result->fetch_array()) { ?>
+<table>
 <tr>
 	<td>Weight (Battery & Propellers Included)</td>
-	<td>1280g</td>
+	<td><?php echo $dado['weight']; ?></td>
 </tr>
 <tr>
 	<td>Diagonal Size (Propellers Excluded)</td>
-	<td>350 mm</td>
+	<td><?php echo $dado['diagonal_size']; ?></td>
 </tr>
 <tr>
 	<td>Max Ascent Speed</td>
-	<td>5m/s</td>
+	<td><?php echo $dado['max_ascent']; ?></td>
 </tr>
 <tr>
 	<td>Max Descent Speed</td>
-	<td>3 m/s</td>
+	<td><?php echo $dado['max_descent']; ?></td>
 </tr>
 <tr>
 	<td>Max Speed</td>
-	<td>16 m/s (ATTI mode)</td>
+	<td><?php echo $dado['max_speed']; ?></td>
 </tr>
 <tr>
 	<td>Max Tilt Angle</td>
-	<td>35°z</td>
+	<td><?php echo $dado['max_tilt']; ?></td>
 </tr>
 <tr>
 	<td>Max Angular Speed</td>
-	<td>150°/s</td>
+	<td><?php echo $dado['max_angular']; ?></td>
 </tr>
 <tr>
 	<td>Max Service Ceiling Above Sea Level</td>
-	<td>19685 feet (6000 m)</td>
+	<td><?php echo $dado['max_service']; ?></td>
 </tr>
 <tr>
 	<td>Max Flight Time</td>
-	<td>Approx. 23 minutes</td>
+	<td><?php echo $dado['max_flight']; ?></td>
 </tr>
 <tr>
 	<td>Operating Temperature Range</td>
-	<td>32° to 104°F (0° to 40°C)</td>
+	<td><?php echo $dado['temper']; ?></td>
 </tr>
 <tr>
 	<td>Satellite Positioning Systems</td>
-	<td>GPS/GLONASS</td>
+	<td><?php echo $dado['satellite']; ?></td>
 </tr>
 </table>
+<?php } ?>
+
 </div>
 
 

@@ -95,7 +95,7 @@ um formulário no final da página com os campos:
 • Observação
 • E-mail -->
 
-<form>
+<form action="conexao/post_user.php" method="POST">
 <label for="nome">Nome: </label><br>
 <input type="text" name="nome" id="nome"><br>
 <label for="sobrenome">Sobrenome: </label><br>
