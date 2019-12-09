@@ -1,8 +1,8 @@
 <!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <html>
     <head>
 	   <title>Educação</title>
-	   <meta charset="utf-8">
 	   <link rel="stylesheet" type="text/css" href="../css/educacao.css">
 	   <link rel="stylesheet" type="text/css" href="../css/menu.css">
     </head>
@@ -61,53 +61,39 @@
             </p>
             <p>Esta é uma lista de espartanos na antiguidade clássica, incluindo reis, tiranos, generais, almirantes, legisladores e demagogos:
             </p>
-            <table>
-                <tr>
-                    <td>Menelau</td>
-                    <td>c. 1200 a.C.</td>
-                    <td>rei mitológico, marido de Helena</td>
-                </tr>
-                <tr>
-                    <td>Licurgo</td>
-                    <td>?</td>
-                    <td>legislador</td>
-                </tr>
-                <tr>
-                    <td>Cleômenes I</td>
-                    <td>520-490 a.C.</td>
-                    <td>rei</td>
-                </tr>
-                <tr>
-                    <td>Demarato</td>
-                    <td>-520 a.C.</td>
-                    <td>rei, tornou-se conselheiro dos reis persas</td>
-                </tr>
-                <tr>
-                    <td>Leônidas I</td>
-                    <td>491 a.C.-480 a.C.</td>
-                    <td>rei, conhecido pela Batalha das Termópilas</td>
-                </tr>
-                <tr>
-                    <td>Brásidas</td>
-                    <td>?</td>
-                    <td>general na Guerra do Peloponeso</td>
-                </tr>
-                <tr>
-                    <td>Lisandro</td>
-                    <td>?</td>
-                    <td>almirante</td>
-                </tr>
-                <tr>
-                    <td>Ágis IV </td>
-                    <td>244-241 a.C.</td>
-                    <td>rei e reformador</td>
-                </tr>
-                <tr>
-                    <td>Cleômenes III</td>
-                    <td>235-222 a.C.</td>
-                    <td>um dos últimos reis de Esparta</td>
-                </tr>
-            </table>
+
+            <?php
+include_once("../conexao/conexao.php");
+$sql =
+"SELECT * FROM educacao";
+if($result = mysqli_query($connection, $sql)){
+if(mysqli_num_rows($result) > 0){
+echo "<table>";
+echo "<tr>";
+echo "<td>Nome</td>";
+echo "<td>Ano</td>";
+echo "<td>Tipo</td>";
+echo "</tr>";
+while($row = mysqli_fetch_array($result)){
+echo "<tr>";
+echo "<td>" . $row['nome'] . "</td>";
+echo "<td>" . $row['ano'] . "</td>";
+echo "<td>" . $row['tipo'] . "</td>";
+echo "</tr>";
+}
+echo "</table>";
+// Free result set
+mysqli_free_result($result);
+} 
+else{
+    echo "Não há dados no banco";
+    }
+    } else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($connection);
+    }
+    // Close connection
+    mysqli_close($connection);
+    ?>
         </div> 
     </div>
     </body>

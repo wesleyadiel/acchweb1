@@ -47,6 +47,7 @@
 <?php
 include_once("../conexao/conexao.php");
 
+
 $sql =
 "SELECT * FROM news2";
 if($result = mysqli_query($connection, $sql)){
