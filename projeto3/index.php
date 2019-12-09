@@ -34,7 +34,7 @@ a notícia. E linhas horizontais separando as matérias.
 <h4> Serviço está disponível em mais de 500 cidades de 36 países. No Brasil, são 70 cidades atendidas </h4>
 
 <div class="figureprincipal">
-<figure><img src="img/news1.jpg" width="400" height="300"></figure>
+<figure><img src="img/news1.jpg" width="400" height="300" class="fade"></figure>
 </div>
 
 <p>O Uber Eats confirmou ter recebido mais de 1 bilhão de pedidos ao redor do mundo em menos de quatro anos. A plataforma está disponível em mais de 500 cidades e em 36 países. No Brasil, o serviço de entrega chegou somente em dezembro de 2016, mas hoje já é parceiro de milhares de empreendimentos gastronômicos em mais de 70 cidades brasileiras, fazendo a curadoria de restaurantes conhecidos como McDonald’s, KFC e Burger King e de negócios familiares locais como Hi Pokee, Busger e Sushi Plus. </p>
@@ -53,7 +53,7 @@ a notícia. E linhas horizontais separando as matérias.
 
 <div class="figureprincipal">
 <figure >
-<img src="img/news2.jpg" width="400" height="300"></figure>
+<img src="img/news2.jpg" width="400" height="300" class="rotate"></figure>
 </div>
 
 <p >A operadora norte-americana Verizon anunciou que irá inaugurar sua rede 5G em Nova Iorque em 26 de Setembro. Inicialmente, as áreas cobertas serão uptown, midtown e downtown Manhattan, além de algumas partes do Brooklyn, Bronx e Queens. </p>

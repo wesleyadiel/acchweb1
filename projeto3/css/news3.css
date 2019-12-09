@@ -22,6 +22,9 @@ body{
     background-color: white;
     border-radius: 5px;
     padding-bottom: 30px;
+    animation-name: slide;
+    animation-duration: 3s; 
+    animation-fill-mode: forwards; 
 }
 h1{
     text-align: center;
@@ -107,3 +110,48 @@ td {
     size: 2;
     color: indigo;
 }
+
+.swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+.border:hover
+{
+        box-shadow: inset 0 0 0 25px #53a7ea;
+}
+
+@-webkit-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @-moz-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @-o-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  
+  .zoom {
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  
