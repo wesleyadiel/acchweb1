@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <html>
     <head>
 	   <title>Educação</title>
@@ -63,9 +63,11 @@
             </p>
 
             <?php
+            
 include_once("../conexao/conexao.php");
 $sql =
 "SELECT * FROM educacao";
+
 if($result = mysqli_query($connection, $sql)){
 if(mysqli_num_rows($result) > 0){
 echo "<table>";
