@@ -31,7 +31,54 @@ body{
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
+    animation-duration: 1s;
+    animation-name: showsecond;
 }
+
+.figure:hover{
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.figureprincipal{
+    animation-duration: 1s;
+    animation-name: showfirst;
+}
+
+@keyframes showfirst{
+    from{
+        margin-top: 100vw;
+        opacity: 0;
+    }
+
+    to{
+        border-radius: 0px;
+        opacity: 1.0;
+        margin-left: 0vw;
+    }
+}
+
+
+
+@keyframes showsecond{
+    from{
+        margin-bottom: 100vw;
+        opacity: 0;
+    }
+
+    to{
+        border-radius: 0px;
+        opacity: 1.0;
+        margin-bottom: 0vw;
+    }
+}
+
+
 p{
 	font-family: sans-serif;
 	align-content: center;

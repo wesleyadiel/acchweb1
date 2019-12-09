@@ -29,6 +29,46 @@ body{
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
+    animation-duration: 2s;
+    animation-name: showimage;
+    
+    width:400;
+    height:300px;
+}
+
+@keyframes showimage{
+    from{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        opacity: 1.0;
+    }
+}
+
+.figure-mulher{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 3s;
+    animation-name: showmoca;
+    width:300;
+    height:220px;
+}
+
+@keyframes showmoca {
+    from{
+        margin-left: 100vw;
+        opacity: 0;
+    }
+
+    to{
+        border-radius: 0px;
+        opacity: 1.0;
+        margin-left: 0vw;
+    }
 }
 
 .titulo{

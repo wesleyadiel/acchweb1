@@ -34,7 +34,7 @@
 <p>Se compararmos as características dele com as de qualquer outro piloto, como velocidade, agressividade, inteligência, domínio da corrida, trabalho em equipe, ele é o melhor em todas. Em algumas, ele divide com outros, como com o Ayrton Senna na velocidade e na superação, com o Michael Schumacher no cálculo, com o Nelson Piquet no entendimento da corrida em começo, meio e fim, mas ele supera todos no conjunto. Ele tem todas as qualidades desses campeões, mas é o melhor em todas.</p>
 <p>O talento do Hamilton já era suficiente para ele chegar entre os maiores da história. No começo de carreira, o que ele teve de fazer foi dominar esse ímpeto de quem vem de uma origem humilde e se sobressai. Isso acontece com muitos que se destacam na arte - e o que ele faz é uma arte - mas se perdem na grandeza que se adquire perante o público.</p>
 <p>Isso aconteceu nos primeiros anos de carreira, não no primeiro ou segundo, já que ele foi campeão pela primeira vez logo na segunda temporada, mas logo depois. E aí foi quando ele desfocou da Fórmula 1 e se dedicou à música, à arte, à convivência noturna, que todo jovem tem direito.</p>
-<div class="imgn">
+<div class="imgn-second">
     <figure><img src="../img/esporte1.jpg" width="400" height="300"> </figure>
 </div>
 <p>O único que conseguiu efetivamente derrotá-lo dentro da mesma equipe foi Nico Rosberg. Eles dividiram corridas, e o alemão conseguiu minar um pouquinho a concentração dele. Mas o campeonato de 2016 foi perdido pelo Hamilton com uma raríssima quebra do motor Mercedes na Malásia. Hoje tem o Max Verstappen, mas são de gerações diferentes. De qualquer forma, o adversário que vier, o Hamilton vai traçar.</p>

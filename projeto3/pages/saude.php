@@ -51,7 +51,7 @@
                 <p>
                     Confira uma lista que preparamos de alguns medicamentos aparentemente inocentes, mas que podem trazer problemas para a sua saúde caso sejam usados de forma incorreta.
                 </p>
-                <figure class="figure">
+                <figure class="figure-mulher">
                     <img src="../img/ingerindo-remedio.jpg" width="300" height="220"></figure>
                     
                 </figure>

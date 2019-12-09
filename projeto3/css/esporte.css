@@ -35,6 +35,26 @@ h4{
 }
 .imgn{
     float: right;
+    animation-name: spin;
+    animation-duration: 1s;
+}
+
+@keyframes spin{
+    from{
+        padding: 100%;
+    }
+    to{
+        padding: 0;
+    }
+}
+
+.imgn-second{
+    float: right;
+    filter: blur(10px);
+}
+.imgn-second:hover{
+    filter: blur(0px);
+    transition-duration: 1s;
 }
 .parte2{
     text-align: justify;
