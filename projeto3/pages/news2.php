@@ -26,7 +26,7 @@
 
 
 <figure>
-<img src="../img/news2.jpg" width="400" height="300"></figure>
+<img src="../img/news2.jpg" width="400" height="300" class="threed"></figure>
 
 <p class="p1">A operadora norte-americana Verizon anunciou que irá inaugurar sua rede 5G em <strong>Nova Iorque em 26 de Setembro</strong>. Inicialmente, as áreas cobertas serão uptown, midtown e downtown Manhattan, além de algumas partes do Brooklyn, Bronx e Queens. </p>
 
@@ -39,7 +39,7 @@
 <p class="p5">A Huawei já tem mais de um terço da infraestrutura de redes de telefonia móvel no País, além de contratos com vários órgãos do governo federal. A companhia chinesa foi escolhida pela Anatel para realizar todos os testes do 5G no Brasil junto com as principais teles – Oi, Tim, Claro, Vivo e Algar – que devem disputar o leilão do próximo ano.
 
 <figure>
-<img src="../img/news2-2.jpg" width="400" height="300"></figure>
+<img src="../img/news2-2.jpg" width="400" height="300" class="grow"></figure>
 
 <p class="p6">Trump levantou a questão na visita de Jair Bolsonaro à Casa Branca, em março deste ano. No fim de julho, foi o secretário de Comércio dos Estados Unidos, Wilbur Ross, que desembarcou no Brasil com supostas informações sobre a vunerabilidade dos equipamentos chineses. Recentemente demitido por Trump, o ex-conselheiro de Segurança Nacional dos EUA John Bolton se encontrou com autoridades brasileiras no começo de agosto. </p>
 

@@ -25,7 +25,7 @@
 <h4> Serviço está disponível em mais de 500 cidades de 36 países. No Brasil, são 70 cidades atendidas </h4>
 
 <div class="figure2">
-     <figure><img src="../img/news1.jpg" width="400" height="300"></figure></div>
+     <figure><img src="../img/news1.jpg" width="400" height="300" class="circle"></figure></div>
      <br><span class="p1"> Uber Eats confirmou ter recebido mais de 1 bilhão de pedidos ao redor do mundo em menos de quatro anos. A plataforma está disponível em mais de 500 cidades e em 36 países. No Brasil, o serviço de entrega chegou somente em dezembro de 2016, mas hoje já é parceiro de milhares de empreendimentos gastronômicos em mais de 70 cidades brasileiras, fazendo a curadoria de restaurantes conhecidos como McDonald’s, KFC e Burger King e de negócios familiares locais como Hi Pokee, Busger e Sushi Plus.
 </span>
 
@@ -47,7 +47,7 @@
 <br>
 <br>
 <div class="figure3"
-<figure><img src="../img/news11.jpg" width="350" height="200"></figure></div>
+<figure><img src="../img/news11.jpg" width="350" height="200" class="border"></figure></div>
 	<span class="p1">
 		As viagens também permitirão que a equipe de carros autônomos da Uber capture cenários cotidianos das ruas e os adicione nas simulações de teste dos veículos, para que as SUVs aprendam de forma realística como funciona o trânsito. 
 	</span>

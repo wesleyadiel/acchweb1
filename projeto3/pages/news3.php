@@ -18,7 +18,7 @@ $connection->set_charset('utf8')
 
 <body>
 	<div class="header">
-		<div id="logo"><img src="../img/logo.png" width="100" height="100"></div>
+		<div id="logo"><img src="../img/logo.png" width="100" height="100" class="swing"></div>
 		</div>
 <nav id="menu">
 	<ul>
@@ -35,7 +35,7 @@ $connection->set_charset('utf8')
 
 
 <figure class="figureprincipal">
-<img src="../img/news3.jpg" width="400" height="300"></figure>
+<img src="../img/news3.jpg" width="400" height="300" class="swing"></figure>
 
 <p class="p1">Promotores acusaram um mecânico de usar um drone para jogar bombas sobre a casa de sua ex-namorada em Washington Township, no estado da Pensilvânia (EUA).</p>
 
@@ -97,7 +97,7 @@ $connection->set_charset('utf8')
 </div>
 
 
- <figure class="figure3"><img src="../img/img2news3.jpg"  width="400" height="300"></figure>
+ <figure class="figure3"><img src="../img/img2news3.jpg"  width="400" height="300" class="zoom"></figure>
 
 <p class="p6">De acordo com o jornal Morning Call, da Pensilvânia, o promotor assistente John Gallagher disse que foi registrado na segunda-feira numa corte federal que Muzzicato usou um drone para soltar um explosivo na propriedade de sua ex-namorada e que ele deveria ficar detido.</p>
 

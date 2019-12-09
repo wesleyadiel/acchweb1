@@ -28,6 +28,7 @@ h1{
     text-align: center;
     color: #FF0000;
     font-family: Copperplate;
+    
 }
 
 h4{
@@ -102,4 +103,21 @@ tr{
 
 th{
     border: 1px solid black;
+}
+
+.threed:hover
+{
+        box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
 }
